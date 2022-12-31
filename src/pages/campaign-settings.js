@@ -50,15 +50,25 @@ const CampaignSettingsPage = () => (
       </Box>
       <Box component="div" sx={styles.settingWrapper}>
         <a href="https://www.worldanvil.com/w/ithlon-sovereignrk" target="_blank">
+          <StaticImage 
+            src="../images/ithlon.png"
+            width={600}
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+            alt="Ithlon"
+          />
+          <Typography align="center">Ithlon</Typography>
+        </a>
+      </Box>
+      <Box component="div" sx={styles.settingWrapper}>
         <StaticImage 
-          src="../images/ithlon.png"
+          src="../images/uscss-nostromo.png"
           width={600}
           quality={95}
           formats={["AUTO", "WEBP", "AVIF"]}
-          alt="Ithlon"
+          alt="USCSS Nostromo"
         />
-        <Typography align="center">Ithlon</Typography>
-        </a>
+        <Typography align="center">USCSS Nostromo</Typography>
       </Box>
       <Box component="div" sx={styles.settingWrapper}>
       <a href="https://www.worldanvil.com/w/toril22" target="_blank">
