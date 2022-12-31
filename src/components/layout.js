@@ -42,6 +42,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <br/>
       <Header siteTitle={data.site.siteMetadata?.title || `Crit Fumble Gaming`} />
       <Box component="div" sx={styles.container}>
         <main>{children}</main>
