@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby/Redux/MUI Boilerplate`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@mutableLoss`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Crit Fumble Gaming`,
+    description: `Welcome to Crit Fumble Gaming! This site is for a VTTRPG group with players with some of the worst luck and dumbest ideas. We are based out of the Midwest United States, but also have players who live in other parts of the country.`,
+    author: `Crit Fumble Gaming`,
+    siteUrl: `https://www.crit-fumble.com/`,
   },
   flags: {
     DEV_SSR: false,
