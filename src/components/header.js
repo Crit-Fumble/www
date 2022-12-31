@@ -1,50 +1,58 @@
 import PropTypes from "prop-types";
-import { Box, Typography } from "@mui/material";
+import { Box, List, ListItem } from "@mui/material";
 import { Link } from "gatsby-theme-material-ui";
+import { StaticImage } from "gatsby-plugin-image";
 
-const Header = ({ siteTitle }) => {
-  const styles = {
-    header: {
-      backgroundColor: 'primary.main',
-      mb: {
-        mobile: 2,
-        desktop: 4
-      }
+const styles = {
+  header: {
+    mb: {
+      mobile: 2,
+      desktop: 4
     },
-    link: {
-      color: 'primary.contrastText',
-      textDecoration: 'none'
-    },
-    title: {
-      my: 0,
-      mx: 'auto',
-      maxWidth: 960,
-      px: {
-        mobile: 2,
-        tablet: 4
-      },
-      py: {
-        mobile: 4,
-        tablet: 8
-      }
-    }
-  }
-
-  return (
-    <Box component="header" sx={styles.header}>
-      <Box component="div" sx={styles.title}>
-        <Link
-          to="/"
-          sx={styles.link}
-        >
-          <Typography variant="h2" sx={{ m: 0 }}>
-              {siteTitle}
-          </Typography>
-        </Link>
-      </Box>
-    </Box>
-  )
+    textAlign: 'center',
+  },
+  navBar: {
+    display: 'block',
+    padding: '1em',
+    maxWidth: 960,
+    borderRadius: '32px',
+    backgroundColor: 'background.paper',
+    margin: '1.5rem auto',
+    padding: '8px',
+  },
+  navItem: {
+    display: 'inline',
+    textAlign: 'center',
+  },
+  link: {
+    textTransform: 'uppercase',
+    width: '100px',
+    height: '100px',
+    color: 'text.primary',
+    textDecoration: 'none',
+    whiteSpace: 'pre',
+  },
 }
+
+const Header = ({ siteTitle }) => (
+  <Box component="header" sx={styles.header}>
+    <StaticImage
+      src="../images/cf-logo.png"
+      width={160}
+      quality={95}
+      formats={["AUTO", "WEBP", "AVIF"]}
+      alt="Crit Fumble Gaming"
+    />
+    <List sx={styles.navBar}>
+      <ListItem sx={styles.navItem}>
+        <Link to="/" sx={styles.link}>Home</Link>
+      </ListItem>
+      <ListItem sx={styles.navItem}>
+        <Link to="/campaign-settings/" sx={styles.link}>Campaign Settings</Link>
+      </ListItem>
+    </List>
+  </Box>
+)
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

@@ -1,29 +1,24 @@
+import { ClassNames } from "@emotion/react";
 import * as React from "react";
-import { Link } from "gatsby-theme-material-ui";
-import { StaticImage } from "gatsby-plugin-image";
-
+import { Box } from "@mui/material";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+
+const styles = {
+  wrapper: {
+    textAlign: 'center',
+    backgroundImage: `url(${"../images/dice-backdrop.jpg"})`,
+  }
+}
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site with <Link to="https://redux.js.org/" target="_blank">Redux</Link> and <Link to="https://material-ui.com/" target="_blank">Material-UI</Link>.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
+    <Box component="div" sx={styles.wrapper}>
+      <h1>Crit Fumble Gaming</h1>
+      <p>If the GM doesn't kill you, the dice will.</p>
+      <p>Welcome to Crit Fumble Gaming! This site is for a VTTRPG group with players with some of the worst luck and dumbest ideas. We are based out of the Midwest United States, but also have players who live in other parts of the country.</p>
+    </Box>
   </Layout>
 )
-
 export default IndexPage

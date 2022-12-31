@@ -14,7 +14,7 @@ const DefaultTheme = createTheme()
 // I'm just showing how we can merge themes
 const AppTheme = createTheme(DefaultTheme, {
   palette: {
-    mode: 'light',
+    mode: 'dark',
     primary: {
       light: lightBlue[300],
       main: lightBlue[500],
@@ -41,12 +41,12 @@ const AppTheme = createTheme(DefaultTheme, {
       selectedOpacity: 1
     },
     background: {
-      default: grey[50],
+      default: grey[800],
       paper: grey[200]
     },
     common: {
-      black: grey[900],
-      white: grey[200]
+      black: grey[1000],
+      white: grey[0]
     },
     error: {
       main: red[500]
@@ -85,7 +85,7 @@ const AppTheme = createTheme(DefaultTheme, {
   },
   typography: {
     // eslint-disable-next-line quotes
-    fontFamily: ['Roboto', 'Arial', 'sans-serif'],
+    fontFamily: ['Maven Pro', 'serif'],
     fontWeightLight: 300,
     fontWeightRegular: 400,
     fontWeightMedium: 500,
