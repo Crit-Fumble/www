@@ -25,7 +25,7 @@ const CampaignSettingsPage = () => (
       <h1>Campaign Settings</h1>
       <p>This is a list of the campaign settings used by Crit Fumble.</p>
       <Box component="div" sx={styles.settingWrapper}>
-        <a href="https://www.worldanvil.com/w/khalbadia-prime" target="_blank"> 
+        <a href="https://www.worldanvil.com/w/khalbadia-prime"> 
           <StaticImage 
             src="../images/khalbadia-prime.webp"
             width={600}
@@ -37,7 +37,7 @@ const CampaignSettingsPage = () => (
         </a>
       </Box>
       <Box component="div" sx={styles.settingWrapper}>
-        <a href="https://www.worldanvil.com/w/bitu" target="_blank">
+        <a href="https://www.worldanvil.com/w/bitu">
           <StaticImage 
             src="../images/bitu.webp"
             width={600}
@@ -49,7 +49,7 @@ const CampaignSettingsPage = () => (
         </a>
       </Box>
       <Box component="div" sx={styles.settingWrapper}>
-        <a href="https://www.worldanvil.com/w/ithlon-sovereignrk" target="_blank">
+        <a href="https://www.worldanvil.com/w/ithlon-sovereignrk">
           <StaticImage 
             src="../images/ithlon.png"
             width={600}
@@ -71,7 +71,7 @@ const CampaignSettingsPage = () => (
         <Typography align="center">USCSS Nostromo</Typography>
       </Box>
       <Box component="div" sx={styles.settingWrapper}>
-      <a href="https://www.worldanvil.com/w/toril22" target="_blank">
+      <a href="https://www.worldanvil.com/w/toril22">
         <StaticImage 
           src="../images/toril22.webp"
           width={600}
