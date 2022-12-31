@@ -49,16 +49,6 @@ const Layout = ({ children }) => {
       </Box>
       <Box component="footer" sx={styles.footer}>
         <Box compionent="div">
-          <a href="https://discord.gg/X93uutXCDd" target="_blank">
-            <StaticImage
-              src="../images/discord.jpg"
-              height={50}
-              quality={95}
-              formats={["AUTO", "WEBP", "AVIF"]}
-              alt="Join the chat on Discord"
-            />
-          </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;
           <a href="https://www.patreon.com/critfumbleweb" target="_blank">
             <StaticImage
               src="../images/patreon.webp"
@@ -66,6 +56,33 @@ const Layout = ({ children }) => {
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
               alt="Become a Patron"
+            />
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://affiliates.fantasygrounds.com/324256/15958/banner_7299" target="_blank">
+            {/* <StaticImage
+              src="https://affiliates.fantasygrounds.com/banner_image/banner/id:7299_324256_15958"
+              height={0}
+              quality={0}
+              formats={["AUTO", "WEBP", "AVIF"]}
+              alt=" "
+            /> */}
+            <StaticImage
+              src="https://affiliates.fantasygrounds.com/img/banners/316034_3264676826.jpg"
+              height={50}
+              quality={95}
+              formats={["AUTO", "WEBP", "AVIF"]}
+              alt="Shop on Fantasy Grounds"
+            />
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://discord.gg/X93uutXCDd" target="_blank">
+            <StaticImage
+              src="../images/discord.jpg"
+              height={50}
+              quality={95}
+              formats={["AUTO", "WEBP", "AVIF"]}
+              alt="Join the chat on Discord"
             />
           </a>
         </Box>
