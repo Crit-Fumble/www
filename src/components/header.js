@@ -53,16 +53,13 @@ const Header = ({ siteTitle }) => (
     </Link>
     <List sx={styles.navBar}>
       <ListItem sx={styles.navItem}>
-        <Link to="/campaigns/" sx={styles.link}>Campaigns</Link>
+        <Link to="/about-us/" sx={styles.link}>About Us</Link>
       </ListItem>
       <ListItem sx={styles.navItem}>
         <Link to="/settings/" sx={styles.link}>Settings</Link>
       </ListItem>
       <ListItem sx={styles.navItem}>
-        <Link to="/storytellers/" sx={styles.link}>Storytellers</Link>
-      </ListItem>
-      <ListItem sx={styles.navItem}>
-        <Link to="/creators/" sx={styles.link}>Creators</Link>
+        <Link to="/campaigns/" sx={styles.link}>Campaigns</Link>
       </ListItem>
       <ListItem sx={styles.navItem}>
         <Link to="/contact/" sx={styles.link}>Contact</Link>

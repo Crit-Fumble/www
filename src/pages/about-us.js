@@ -5,6 +5,11 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import DataService from "../services/DataService";
 
+const roleIds = {
+  STORYTELLER: 1,
+  CREATOR: 2
+}
+
 const styles = {
   wrapper: {
     textAlign: 'center',
@@ -18,8 +23,8 @@ const styles = {
   }
 }
 
-const Storyteller = ({data}) => { 
-  const campaigns = DataService.campaigns.filter(({storytellers})=>(storytellers.includes(data.id)));
+const User = ({data}) => { 
+  // const campaigns = DataService.campaigns.filter(({storytellers})=>(storytellers.includes(data.id)));
   const settings = DataService.settings.filter(({storytellers})=>(storytellers.includes(data.id)));
   return (
     <Box component="div" sx={styles.settingWrapper}>
@@ -65,17 +70,49 @@ const Storyteller = ({data}) => {
   );
 }
 
-const CampaignsPage = () => (
-  <Layout>
-    <Seo title="Storytellers" />
-    <Box component="div" sx={styles.wrapper}>
-      <h1>Storytellers</h1>
-      <p>The Storytellers and Game Masters of Crit Fumble Gaming.</p>
-      {DataService.storytellers?.map((data) =>(
-        <Storyteller key={`${data.id}`} data={data} />
-      ))}
-    </Box>
-  </Layout>
-)
+const AboutUsPage = () => {
+  const storytellers = DataService.users
+    .filter(({roles}) => roles.includes(roleIds.STORYTELLER));
+  const creators = DataService.users
+    .filter(({roles}) => roles.includes(roleIds.CREATOR) && !roles.includes(roleIds.STORYTELLER));
+  // const players = DataService.users
+  //  .filter(({roles}) => roles.includes(3) && ![1,2].some(r => roles.includes(r)));
+  return (
+    <Layout>
+      <Seo title="About Us" />
+        <Box component="div" sx={styles.wrapper}>
+        <h1>About Us</h1>
+        <p></p>
+      </Box>
+      {storytellers?.length > 0 && (
+        <Box component="div" sx={styles.wrapper}>
+          <h2>Storytellers</h2>
+          <p>The Storytellers and Game Masters of Crit Fumble Gaming.</p>
+          {storytellers?.map((data) =>(
+            <User key={`${data.id}`} data={data} />
+          ))}
+        </Box>
+      )}
+      {creators?.length > 0 && (
+        <Box component="div" sx={styles.wrapper}>
+          <h2>Creators</h2>
+          <p>Contributors other than storytellers provide things like art, note taking, and other types of storyteller assistance.</p>
+          {creators?.map((data) =>(
+            <User key={`${data.id}`} data={data} />
+          ))}
+        </Box>
+      )}
+      {/* {players?.length > 0 && (
+        <Box component="div" sx={styles.wrapper}>
+          <h2>Players</h2>
+          <p></p>
+          {creators?.map((data) =>(
+            <User key={`${data.id}`} data={data} />
+          ))}
+        </Box>
+      )} */}
+    </Layout>
+  );
+}
 
-export default CampaignsPage
+export default AboutUsPage
