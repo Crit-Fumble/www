@@ -19,23 +19,30 @@ const styles = {
 }
 
 const Storyteller = ({data}) => { 
+  console.log(data.weblinks);
   return (
     <Box component="div" sx={styles.settingWrapper}>
-      {/* <a href={data.weblink}> 
-        {data.image && <img 
-          src={data.image}
-          width={600}
-          alt={data.name}
-        />} */}
-        <Typography align="center">{data.name}</Typography>
-      {/* </a> */}
+      <Typography align="center">{data.name}</Typography>
+      {data.weblinks?.length > 0 && (
+        <div>
+          Links:&nbsp;&nbsp;
+          {data.weblinks.map(weblink => (
+            [
+              <a href={weblink.url}>
+                  {weblink.name}
+              </a>,
+              <span>&nbsp;&nbsp;</span>
+            ]
+          ))}
+        </div>
+      )}
     </Box>
   );
 }
 
 const CampaignsPage = () => (
   <Layout>
-    <Seo title="Campaigns" />
+    <Seo title="Storytellers" />
     <Box component="div" sx={styles.wrapper}>
       <h1>Storytellers</h1>
       <p>The Storytellers and Game Masters of Crit Fumble Gaming.</p>

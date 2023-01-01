@@ -59,6 +59,9 @@ const Header = ({ siteTitle }) => (
       <ListItem sx={styles.navItem}>
         <Link to="/creators/" sx={styles.link}>Creators</Link>
       </ListItem>
+      <ListItem sx={styles.navItem}>
+        <Link to="/contact/" sx={styles.link}>Contact</Link>
+      </ListItem>
     </List>
   </Box>
 )
