@@ -36,7 +36,7 @@ const Setting = ({data}) => {
       {data.storytellers?.length > 0 && (
         <div>
         Storyteller{data.storytellers?.length > 1 && 's'}:&nbsp;&nbsp;
-        {DataService.storytellers
+        {DataService.users.filter(({roles}) => roles.includes(1))
           .filter(({id}) => (data.storytellers.includes(id)))
           .map((storyteller, idx) => ([
             <span key={`name ${idx}`}>{storyteller.name}</span>,
