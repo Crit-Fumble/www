@@ -15,6 +15,9 @@ const styles = {
     margin: 'auto',
     padding: '16px',
     mt: '2rem'
+  },
+  settingImage: {
+    maxWidth: '100%',
   }
 }
 
@@ -24,6 +27,7 @@ const Setting = ({data}) => {
       <a href={data.weblink}> 
         <Typography align="center" fontWeight="800">{data.name}</Typography>
         {data.image && <img 
+          style={styles.settingImage}
           src={data.image}
           width={600}
           alt={data.name}
@@ -31,10 +35,13 @@ const Setting = ({data}) => {
       </a>
       {data.storytellers?.length > 0 && (
         <div>
-        Storyteller:&nbsp;&nbsp;
+        Storyteller{data.storytellers?.length > 1 && 's'}:&nbsp;&nbsp;
         {DataService.storytellers
           .filter(({id}) => (data.storytellers.includes(id)))
-          .map((storyteller, idx) => (<span key={`${idx}`}>{storyteller.name}</span>))
+          .map((storyteller, idx) => ([
+            <span key={`name ${idx}`}>{storyteller.name}</span>,
+            <span key={`space ${idx}`}>&nbsp;&nbsp;</span>
+          ]))
         }
         </div>
       )}

@@ -26,7 +26,7 @@ const Storyteller = ({data}) => {
       <Typography align="center" fontWeight="800">{data.name}</Typography>
       {campaigns?.length > 0 && (
         <div>
-        Campaigns:&nbsp;&nbsp;
+        Campaign{data.campaigns?.length > 1 && 's'}:&nbsp;&nbsp;
         {campaigns.map((campaign, idx) => (
           [
             <span key={`name ${idx}`}>"{campaign.name}"</span>,
@@ -37,7 +37,7 @@ const Storyteller = ({data}) => {
       )}
       {settings?.length > 0 && (
         <div>
-        Settings:&nbsp;&nbsp;
+        Setting{data.settings?.length > 1 && 's'}:&nbsp;&nbsp;
         {settings.map((setting, idx) => (
           [
             <a key={`link ${idx}`} href={setting.weblink} target="_blank">
