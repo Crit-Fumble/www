@@ -18,17 +18,17 @@ const styles = {
   }
 }
 
-const Campaign = ({data}) => { 
+const Storyteller = ({data}) => { 
   return (
     <Box component="div" sx={styles.settingWrapper}>
-      <a href={data.weblink}> 
+      {/* <a href={data.weblink}> 
         {data.image && <img 
           src={data.image}
           width={600}
           alt={data.name}
-        />}
+        />} */}
         <Typography align="center">{data.name}</Typography>
-      </a>
+      {/* </a> */}
     </Box>
   );
 }
@@ -37,10 +37,10 @@ const CampaignsPage = () => (
   <Layout>
     <Seo title="Campaigns" />
     <Box component="div" sx={styles.wrapper}>
-      <h1>Campaigns</h1>
-      <p>This is a list of current Crit Fumble campaigns.</p>
-      {DataService.campaigns?.map((data) =>(
-        <Campaign key={`${data.id}`} data={data} />
+      <h1>Creators</h1>
+      <p>Contributors other than storytellers provide things like art, note taking, and other types of storyteller assistance.</p>
+      {DataService.creators?.map((data) =>(
+        <Storyteller key={`${data.id}`} data={data} />
       ))}
     </Box>
   </Layout>

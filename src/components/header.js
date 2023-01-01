@@ -56,6 +56,9 @@ const Header = ({ siteTitle }) => (
       <ListItem sx={styles.navItem}>
         <Link to="/storytellers/" sx={styles.link}>Storytellers</Link>
       </ListItem>
+      <ListItem sx={styles.navItem}>
+        <Link to="/creators/" sx={styles.link}>Creators</Link>
+      </ListItem>
     </List>
   </Box>
 )
