@@ -1,0 +1,79 @@
+{
+  "storytellers": [
+    {
+      "id": 1,
+      "name": "Mumbley"
+    },
+    {
+      "id": 2,
+      "name": "Daytrain"
+    },
+    {
+      "id": 3,
+      "name": "Sovereign RK"
+    }
+  ],
+  "creators": [
+    {
+      "id": 1,
+      "name": "Skip"
+    }
+  ],
+  "campaigns:" : [
+    {
+      "id": 1,
+      "name": "Ghosts of Mistbrooke Harbor"
+    },
+    {
+      "id": 2,
+      "name": "The Settlers Beyond the Witchlight"
+    },
+    {
+      "id": 3,
+      "name": "The Event Horizon"
+    },
+    {
+      "id": 4,
+      "name": "USCSS Nostromo"
+    },
+    {
+      "id": 5,
+      "name": "Tell No Tales of the Rime of the Frostmaiden"
+    },
+    {
+      "id": 6,
+      "name": "The Party SOmetimes Dies in the Forgotten Realms"
+    }
+  ],
+  "campaignSettings": [
+    {
+      "id": 1,
+      "name": "Khalbadia Prime",
+      "weblink": "https://www.worldanvil.com/w/khalbadia-prime",
+      "image": "https://www.worldanvil.com/media/cache/cover/uploads/maps/f86c7a573eb9cfc848a72acda4f80f29.jpg"
+    },
+    {
+      "id": 2,
+      "name": "The Plane of Bitu",
+      "weblink": "https://www.worldanvil.com/w/bitu",
+      "image": "https://www.worldanvil.com/media/cache/cover/uploads/images/2254cf89eef87c113bfb64b527ffd20a.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Empires of Ithlon",
+      "weblink": "https://www.worldanvil.com/w/ithlon-sovereignrk",
+      "image": "https://s3.amazonaws.com/files.d20.io/images/276460078/rXkOWZDPA8udwmNSj8Sh6A/max.jpg"
+    },
+    {
+      "id": 4,
+      "name": "USCSS Nostromo",
+      "image": "https://imgur.com/bpvD0Zi.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Toril22",
+      "weblink": "https://www.worldanvil.com/w/toril22",
+      "image": "https://www.worldanvil.com/media/cache/cover/uploads/images/533f6dd42214fbc145af473ed871549e.webp"
+    }
+  ]
+}

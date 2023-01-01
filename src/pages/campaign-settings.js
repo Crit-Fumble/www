@@ -3,7 +3,7 @@ import { Box, List, ListItem, Typography } from "@mui/material";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import { StaticImage } from "gatsby-plugin-image";
+import { campaignSettings } from "../data/data.json";
 
 const styles = {
   wrapper: {
@@ -18,70 +18,29 @@ const styles = {
   }
 }
 
+const Campaign = ({data}) => {
+  console.log(data);
+  return (
+    <Box component="div" sx={styles.settingWrapper}>
+      <a href={data.weblink}> 
+        {data.image && <img 
+          src={data.image}
+          width={600}
+          alt={data.name}
+        />}
+        <Typography align="center">{data.name}</Typography>
+      </a>
+    </Box>
+  );
+}
+
 const CampaignSettingsPage = () => (
   <Layout>
     <Seo title="Campaign Settings" />
     <Box component="div" sx={styles.wrapper}>
       <h1>Campaign Settings</h1>
       <p>This is a list of the campaign settings used by Crit Fumble.</p>
-      <Box component="div" sx={styles.settingWrapper}>
-        <a href="https://www.worldanvil.com/w/khalbadia-prime"> 
-          <StaticImage 
-            src="../images/khalbadia-prime.webp"
-            width={600}
-            quality={95}
-            formats={["AUTO", "WEBP", "AVIF"]}
-            alt="Khalbadia Prime"
-          />
-          <Typography align="center">Khalbadia Prime</Typography>
-        </a>
-      </Box>
-      <Box component="div" sx={styles.settingWrapper}>
-        <a href="https://www.worldanvil.com/w/bitu">
-          <StaticImage 
-            src="../images/bitu.webp"
-            width={600}
-            quality={95}
-            formats={["AUTO", "WEBP", "AVIF"]}
-            alt="The Plane of Bitu"
-          />
-          <Typography align="center">The Plane of Bitu</Typography>
-        </a>
-      </Box>
-      <Box component="div" sx={styles.settingWrapper}>
-        <a href="https://www.worldanvil.com/w/ithlon-sovereignrk">
-          <StaticImage 
-            src="../images/ithlon.png"
-            width={600}
-            quality={95}
-            formats={["AUTO", "WEBP", "AVIF"]}
-            alt="Ithlon"
-          />
-          <Typography align="center">Ithlon</Typography>
-        </a>
-      </Box>
-      <Box component="div" sx={styles.settingWrapper}>
-        <StaticImage 
-          src="../images/uscss-nostromo.png"
-          width={600}
-          quality={95}
-          formats={["AUTO", "WEBP", "AVIF"]}
-          alt="USCSS Nostromo"
-        />
-        <Typography align="center">USCSS Nostromo</Typography>
-      </Box>
-      <Box component="div" sx={styles.settingWrapper}>
-      <a href="https://www.worldanvil.com/w/toril22">
-        <StaticImage 
-          src="../images/toril22.webp"
-          width={600}
-          quality={95}
-          formats={["AUTO", "WEBP", "AVIF"]}
-          alt="Toril22"
-        />
-        <Typography align="center">Toril22</Typography>
-      </a>
-      </Box>
+      {campaignSettings.map((data) =><Campaign key={`${data.id}`} data={data} />)}
     </Box>
   </Layout>
 )
