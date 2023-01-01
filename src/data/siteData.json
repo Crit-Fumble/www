@@ -22,27 +22,39 @@
   "campaigns" : [
     {
       "id": 1,
-      "name": "Ghosts of Mistbrooke Harbor"
+      "name": "Ghosts of Mistbrooke Harbor",
+      "description": "Join the Tidal Waves, a group of capable privateers, for their adventures and espionage in The Ghosts of Mistbrooke Harbor. As told by DM Mumbley in the world of Khalbadia Prime.",
+      "image":"https://5etools.crit-fumble.com/img/adventure/GoS/048-06-03-sahuagin-stronghold.png"
     },
     {
       "id": 2,
-      "name": "The Settlers Beyond the Witchlight"
+      "name": "The Settlers Beyond the Witchlight",
+      "description": "Good Omens, the adventuring party from the realm of Oxomar, has journeyed into the fey domain of Prismeer to deliver it from the hands of the hourglass coven.",
+      "image":"https://s3.amazonaws.com/files.d20.io/images/256136426/pim9KHMMEPbrxFZpkLKOKg/max.png"
     },
     {
       "id": 3,
-      "name": "The Event Horizon"
+      "name": "The Event Horizon",
+      "description": "In a world of Warring Empires, where alliances are forged and dismantled at a whim of Kings, Bishops, and Khans, one small band of mutants stands against the machinations of a murderous cult and the demon lord they serve.",
+      "image":"https://s3.amazonaws.com/files.d20.io/images/276460078/rXkOWZDPA8udwmNSj8Sh6A/max.jpg"
     },
     {
       "id": 4,
-      "name": "USCSS Nostromo"
+      "name": "USCSS Nostromo",
+      "description": "A Coriolis: The Third Horizon campaign ran by Eric.",
+      "image": "https://imgur.com/bpvD0Zi.jpg"
     },
     {
       "id": 5,
-      "name": "Tell No Tales of the Rime of the Frostmaiden"
+      "name": "Tell No Tales of the Rime of the Frostmaiden",
+      "description": "Let's catch back up with Tell No Tales. Mumbles will be DMing Rime of the Frost Maiden using Fantasy Grounds. This will be a session to get everything set up and ready to go.",
+      "image": "https://5etools.crit-fumble.com/img/adventure/IDRotF/001-00-001.png"
     },
     {
       "id": 6,
-      "name": "The Party SOmetimes Dies in the Forgotten Realms"
+      "name": "The Party Sometimes Dies in the Forgotten Realms",
+      "description": "Daytrain is currently running Tomb of Annihilation using Roll20. Join The Party as they delve into The Tomb of the Nine Gods to thwart the schemes of Acererak!",
+      "image": "https://s3.amazonaws.com/files.d20.io/images/314920540/u8eQRBvlrh1brerP8_4VfA/max.jpg"
     }
   ],
   "campaignSettings": [
