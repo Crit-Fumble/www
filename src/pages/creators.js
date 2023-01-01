@@ -21,21 +21,14 @@ const styles = {
 const Storyteller = ({data}) => { 
   return (
     <Box component="div" sx={styles.settingWrapper}>
-      {/* <a href={data.weblink}> 
-        {data.image && <img 
-          src={data.image}
-          width={600}
-          alt={data.name}
-        />} */}
         <Typography align="center">{data.name}</Typography>
-      {/* </a> */}
     </Box>
   );
 }
 
 const CampaignsPage = () => (
   <Layout>
-    <Seo title="Campaigns" />
+    <Seo title="Creators" />
     <Box component="div" sx={styles.wrapper}>
       <h1>Creators</h1>
       <p>Contributors other than storytellers provide things like art, note taking, and other types of storyteller assistance.</p>

@@ -29,6 +29,19 @@ const Campaign = ({data}) => {
         />}
         <Typography align="center">{data.name}</Typography>
       </a>
+      {data.weblinks?.length > 0 && (
+        <div>
+          Links:&nbsp;&nbsp;
+          {data.weblinks.map(weblink => (
+            [
+              <a href={weblink.url}>
+                  {weblink.name}
+              </a>,
+              <span>&nbsp;&nbsp;</span>
+            ]
+          ))}
+        </div>
+      )}
     </Box>
   );
 }

@@ -2,58 +2,122 @@
   "storytellers": [
     {
       "id": 1,
-      "name": "Mumbley"
+      "name": "Mumbley",
+      "weblinks": [
+        {
+          "name": "World Anvil",
+          "url": "https://www.worldanvil.com/author/MumblesKC"
+        }
+      ],
+      "discordId": "148322230093217792"
     },
     {
       "id": 2,
-      "name": "Daytrain"
+      "name": "Hob Daytrain",
+      "weblinks": [
+        {
+          "name": "World Anvil",
+          "url": "https://www.worldanvil.com/author/hobdaytrain"
+        },
+        {
+          "name": "Roll20",
+          "url": "https://app.roll20.net/users/6244861/hob-daytrain"
+        }
+      ],
+      "discordId": "451207409915002882"
     },
     {
       "id": 3,
-      "name": "Eric"
+      "name": "Eric",
+      "weblinks": [
+        {
+          "name": "World Anvil",
+          "url": "https://www.worldanvil.com/author/sovereignrk"
+        },
+        {
+          "name": "Roll20",
+          "url": "https://app.roll20.net/users/9480594/eric-s"
+        }
+      ],
+      "discordId": "453698917016797185"
     }
   ],
   "creators": [
     {
       "id": 1,
-      "name": "Skip"
+      "name": "Skip",
+      "weblinks": [],
+      "discordId": "307361001538453504"
     }
   ],
   "campaigns" : [
     {
       "id": 1,
       "name": "Ghosts of Mistbrooke Harbor",
+      "storytellers": [1],
+      "settings": [1],
       "description": "Join the Tidal Waves, a group of capable privateers, for their adventures and espionage in The Ghosts of Mistbrooke Harbor. As told by DM Mumbley in the world of Khalbadia Prime.",
+      "weblinks": [],
       "image":"https://5etools.crit-fumble.com/img/adventure/GoS/048-06-03-sahuagin-stronghold.png"
     },
     {
       "id": 2,
       "name": "The Settlers Beyond the Witchlight",
+      "storytellers": [2],
+      "settings": [2],
       "description": "Good Omens, the adventuring party from the realm of Oxomar, has journeyed into the fey domain of Prismeer to deliver it from the hands of the hourglass coven.",
+      "weblinks": [
+        {
+          "name": "Roll20",
+          "url": "https://app.roll20.net/campaigns/details/11951518/the-settlers-beyond-the-witchlight"
+        }
+      ],
       "image":"https://s3.amazonaws.com/files.d20.io/images/256136426/pim9KHMMEPbrxFZpkLKOKg/max.png"
     },
     {
       "id": 3,
       "name": "The Event Horizon",
+      "storytellers": [3],
+      "settings": [3],
       "description": "In a world of Warring Empires, where alliances are forged and dismantled at a whim of Kings, Bishops, and Khans, one small band of mutants stands against the machinations of a murderous cult and the demon lord they serve.",
+      "weblinks": [
+        {
+          "name": "Roll20",
+          "url": "https://app.roll20.net/campaigns/details/12150003/the-empires-of-ithlon"
+        }
+      ],
       "image":"https://s3.amazonaws.com/files.d20.io/images/276460078/rXkOWZDPA8udwmNSj8Sh6A/max.jpg"
     },
     {
       "id": 4,
       "name": "USCSS Nostromo",
+      "storytellers": [3],
+      "settings": [4],
       "description": "A Coriolis: The Third Horizon campaign ran by Eric.",
+      "weblinks": [],
       "image": "https://imgur.com/bpvD0Zi.jpg"
     },
     {
       "id": 5,
       "name": "Tell No Tales of the Rime of the Frostmaiden",
+      "storytellers": [1],
+      "settings": [5],
       "description": "Let's catch back up with Tell No Tales. Mumbles will be DMing Rime of the Frost Maiden using Fantasy Grounds. This will be a session to get everything set up and ready to go.",
+      "weblinks": [],
       "image": "https://5etools.crit-fumble.com/img/adventure/IDRotF/001-00-001.png"
     },
     {
       "id": 6,
       "name": "The Party Sometimes Dies in the Forgotten Realms",
+      "storytellers": [2],
+      "settings": [5],
       "description": "Daytrain is currently running Tomb of Annihilation using Roll20. Join The Party as they delve into The Tomb of the Nine Gods to thwart the schemes of Acererak!",
+      "weblinks": [
+        {
+          "name": "Roll20",
+          "url": "https://app.roll20.net/campaigns/details/9990751/the-party-tomb-of-the-nine-gods"
+        }
+      ],
       "image": "https://s3.amazonaws.com/files.d20.io/images/314920540/u8eQRBvlrh1brerP8_4VfA/max.jpg"
     }
   ],
@@ -61,31 +125,52 @@
     {
       "id": 1,
       "name": "Khalbadia Prime",
+      "storytellers": [1],
       "weblink": "https://www.worldanvil.com/w/khalbadia-prime",
       "image": "https://www.worldanvil.com/media/cache/cover/uploads/maps/f86c7a573eb9cfc848a72acda4f80f29.jpg"
     },
     {
       "id": 2,
       "name": "The Plane of Bitu",
+      "storytellers": [2],
       "weblink": "https://www.worldanvil.com/w/bitu",
       "image": "https://www.worldanvil.com/media/cache/cover/uploads/images/2254cf89eef87c113bfb64b527ffd20a.jpg"
     },
     {
       "id": 3,
       "name": "Empires of Ithlon",
+      "storytellers": [3],
       "weblink": "https://www.worldanvil.com/w/ithlon-sovereignrk",
       "image": "https://s3.amazonaws.com/files.d20.io/images/276460078/rXkOWZDPA8udwmNSj8Sh6A/max.jpg"
     },
     {
       "id": 4,
       "name": "USCSS Nostromo",
+      "storytellers": [3],
       "image": "https://imgur.com/bpvD0Zi.jpg"
     },
     {
       "id": 5,
       "name": "Toril22",
+      "storytellers": [1,2],
       "weblink": "https://www.worldanvil.com/w/toril22",
       "image": "https://www.worldanvil.com/media/cache/cover/uploads/images/533f6dd42214fbc145af473ed871549e.webp"
     }
-  ]
+  ],
+  "gameSystems": [
+    {
+      "id": 1,
+      "code": "D&D5e",
+      "name": "Dungeons and Dragons",
+      "edition": 5,
+      "weblinks": []
+    },
+    {
+      "id": 2,
+      "code": "Coriolis",
+      "name": "Coriolis",
+      "weblinks": []
+    }
+  ],
+  "discordId": "1002008886137589771"
 }
