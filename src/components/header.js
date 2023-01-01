@@ -36,17 +36,16 @@ const styles = {
 
 const Header = ({ siteTitle }) => (
   <Box component="header" sx={styles.header}>
-    <StaticImage
-      src="../images/cf-logo.png"
-      width={160}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="Crit Fumble Gaming"
-    />
+    <Link to="/">
+      <StaticImage
+        src="../images/cf-logo.png"
+        width={160}
+        quality={95}
+        formats={["AUTO", "WEBP", "AVIF"]}
+        alt="Crit Fumble Gaming"
+      />
+    </Link>
     <List sx={styles.navBar}>
-      <ListItem sx={styles.navItem}>
-        <Link to="/" sx={styles.link}>Home</Link>
-      </ListItem>
       <ListItem sx={styles.navItem}>
         <Link to="/campaigns/" sx={styles.link}>Campaigns</Link>
       </ListItem>

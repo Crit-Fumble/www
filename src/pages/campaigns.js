@@ -52,7 +52,7 @@ const Campaign = ({data}) => {
           Links:&nbsp;&nbsp;
           {data.weblinks.map((weblink, idx) => (
             [
-              <a key={`link ${idx}`} href={weblink.url}>
+              <a key={`link ${idx}`} href={weblink.url} target="_blank">
                   {weblink.name}
               </a>,
               <span key={`space ${idx}`}>&nbsp;&nbsp;</span>
