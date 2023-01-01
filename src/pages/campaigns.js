@@ -17,6 +17,7 @@ const styles = {
     mt: '2rem'
   },
   campaignImage: {
+    maxHeight: '300px',
     maxWidth: '100%',
   }
 }
@@ -29,7 +30,6 @@ const Campaign = ({data}) => {
         {data.image && <img 
           style={styles.campaignImage}
           src={data.image}
-          width={600}
           alt={data.name}
         />}
       </a>
