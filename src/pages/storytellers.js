@@ -1,9 +1,9 @@
 import * as React from "react";
-import { Box, List, ListItem, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import { campaignSettings } from "../data/data.json";
+import DataService from "../services/DataService";
 
 const styles = {
   wrapper: {
@@ -18,31 +18,32 @@ const styles = {
   }
 }
 
-const Campaign = ({data}) => {
-  console.log(data);
+const Storyteller = ({data}) => { 
   return (
     <Box component="div" sx={styles.settingWrapper}>
-      <a href={data.weblink}> 
+      {/* <a href={data.weblink}> 
         {data.image && <img 
           src={data.image}
           width={600}
           alt={data.name}
-        />}
+        />} */}
         <Typography align="center">{data.name}</Typography>
-      </a>
+      {/* </a> */}
     </Box>
   );
 }
 
-const CampaignSettingsPage = () => (
+const CampaignsPage = () => (
   <Layout>
-    <Seo title="Campaign Settings" />
+    <Seo title="Campaigns" />
     <Box component="div" sx={styles.wrapper}>
-      <h1>Campaign Settings</h1>
-      <p>This is a list of the campaign settings used by Crit Fumble.</p>
-      {campaignSettings.map((data) =><Campaign key={`${data.id}`} data={data} />)}
+      <h1>Storytellers</h1>
+      <p>The Storytellers and Game Masters of Crit Fumble Gaming.</p>
+      {DataService.storytellers?.map((data) =>(
+        <Storyteller key={`${data.id}`} data={data} />
+      ))}
     </Box>
   </Layout>
 )
 
-export default CampaignSettingsPage
+export default CampaignsPage

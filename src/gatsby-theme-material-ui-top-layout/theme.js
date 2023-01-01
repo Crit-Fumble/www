@@ -42,11 +42,11 @@ const AppTheme = createTheme(DefaultTheme, {
     },
     background: {
       default: grey[800],
-      paper: grey[200]
+      paper: grey[200],
     },
     common: {
       black: grey[1000],
-      white: grey[0]
+      white: grey[1]
     },
     error: {
       main: red[500]
