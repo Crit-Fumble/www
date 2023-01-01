@@ -22,13 +22,22 @@ const Setting = ({data}) => {
   return (
     <Box component="div" sx={styles.settingWrapper}>
       <a href={data.weblink}> 
+        <Typography align="center" fontWeight="800">{data.name}</Typography>
         {data.image && <img 
           src={data.image}
           width={600}
           alt={data.name}
         />}
-        <Typography align="center">{data.name}</Typography>
       </a>
+      {data.storytellers?.length > 0 && (
+        <div>
+        Storyteller:&nbsp;&nbsp;
+        {DataService.storytellers
+          .filter(({id}) => (data.storytellers.includes(id)))
+          .map((storyteller, idx) => (<span key={`${idx}`}>{storyteller.name}</span>))
+        }
+        </div>
+      )}
     </Box>
   );
 }
@@ -39,7 +48,7 @@ const SettingsPage = () => (
     <Box component="div" sx={styles.wrapper}>
       <h1>Settings</h1>
       <p>This is a list of the campaign settings used by Crit Fumble Gaming storytellers.</p>
-      {DataService.campaignSettings?.map((data) =>(
+      {DataService.settings?.map((data) =>(
         <Setting key={`${data.id}`} data={data} />
       ))}
     </Box>

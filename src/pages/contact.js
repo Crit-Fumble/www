@@ -24,7 +24,7 @@ const ContactPage = () => (
     <Box component="div" sx={styles.wrapper}>
       <h1>Contact</h1>
       <p>To contact us, join our Discord server!</p>
-      <iframe src={`https://discord.com/widget?id=${DataService.discordId}&theme=dark`} width="500" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />
+      <iframe src={`https://discord.com/widget?id=${DataService.discordId}&theme=dark`} width="500" height="400" allowtransparency="true" frameBorder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />
     </Box>
   </Layout>
 )

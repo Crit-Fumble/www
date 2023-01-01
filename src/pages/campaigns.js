@@ -18,26 +18,44 @@ const styles = {
   }
 }
 
-const Campaign = ({data}) => { 
+const Campaign = ({data}) => {
   return (
     <Box component="div" sx={styles.settingWrapper}>
       <a href={data.weblink}> 
+        <Typography align="center" fontWeight="800">{data.name}</Typography>
         {data.image && <img 
           src={data.image}
           width={600}
           alt={data.name}
         />}
-        <Typography align="center">{data.name}</Typography>
       </a>
+      {data.storytellers?.length > 0 && (
+        <div>
+        Storyteller:&nbsp;&nbsp;
+        {DataService.storytellers
+          .filter(({id}) => (data.storytellers.includes(id)))
+          .map((storyteller, idx) => (<span key={`storyteller ${idx}`}>{storyteller.name}</span>))
+        }
+        </div>
+      )}
+      {data.settings?.length > 0 && (
+        <div>
+          Setting:&nbsp;&nbsp;
+          {DataService.settings
+            .filter(({id}) => (data.settings.includes(id)))
+            .map((setting, idx) => (<a key={`link ${idx}`} href={setting.weblink}>{setting.name}</a>))
+          }
+        </div>
+      )}
       {data.weblinks?.length > 0 && (
         <div>
           Links:&nbsp;&nbsp;
-          {data.weblinks.map(weblink => (
+          {data.weblinks.map((weblink, idx) => (
             [
-              <a href={weblink.url}>
+              <a key={`link ${idx}`} href={weblink.url}>
                   {weblink.name}
               </a>,
-              <span>&nbsp;&nbsp;</span>
+              <span key={`space ${idx}`}>&nbsp;&nbsp;</span>
             ]
           ))}
         </div>
