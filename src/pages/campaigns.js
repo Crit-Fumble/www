@@ -9,21 +9,25 @@ const styles = {
   wrapper: {
     textAlign: 'center',
   },
-  settingWrapper: {
+  campaignWrapper: {
     borderRadius: '32px',
     backgroundColor: 'white',
     margin: 'auto',
     padding: '16px',
     mt: '2rem'
+  },
+  campaignImage: {
+    maxWidth: '100%',
   }
 }
 
 const Campaign = ({data}) => {
   return (
-    <Box component="div" sx={styles.settingWrapper}>
+    <Box component="div" sx={styles.campaignWrapper}>
       <a href={data.weblink}> 
         <Typography align="center" fontWeight="800">{data.name}</Typography>
         {data.image && <img 
+          style={styles.campaignImage}
           src={data.image}
           width={600}
           alt={data.name}
@@ -31,7 +35,7 @@ const Campaign = ({data}) => {
       </a>
       {data.storytellers?.length > 0 && (
         <div>
-        Storyteller:&nbsp;&nbsp;
+        Storyteller{data.storytellers?.length > 1 && 's'}:&nbsp;&nbsp;
         {DataService.storytellers
           .filter(({id}) => (data.storytellers.includes(id)))
           .map((storyteller, idx) => (<span key={`storyteller ${idx}`}>{storyteller.name}</span>))
@@ -40,7 +44,7 @@ const Campaign = ({data}) => {
       )}
       {data.settings?.length > 0 && (
         <div>
-          Setting:&nbsp;&nbsp;
+          Setting{data.settings?.length > 1 && 's'}:&nbsp;&nbsp;
           {DataService.settings
             .filter(({id}) => (data.settings.includes(id)))
             .map((setting, idx) => (<a key={`link ${idx}`} href={setting.weblink}>{setting.name}</a>))
@@ -49,7 +53,7 @@ const Campaign = ({data}) => {
       )}
       {data.weblinks?.length > 0 && (
         <div>
-          Links:&nbsp;&nbsp;
+          Link{data.weblinks?.length > 1 && 's'}:&nbsp;&nbsp;
           {data.weblinks.map((weblink, idx) => (
             [
               <a key={`link ${idx}`} href={weblink.url} target="_blank">
