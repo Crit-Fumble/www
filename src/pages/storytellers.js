@@ -24,9 +24,9 @@ const Storyteller = ({data}) => {
   return (
     <Box component="div" sx={styles.settingWrapper}>
       <Typography align="center" fontWeight="800">{data.name}</Typography>
-      {campaigns?.length > 0 && (
+      {/* {campaigns?.length > 0 && (
         <div>
-        Campaign{data.campaigns?.length > 1 && 's'}:&nbsp;&nbsp;
+        Campaign{campaigns?.length > 1 && 's'}:&nbsp;&nbsp;
         {campaigns.map((campaign, idx) => (
           [
             <span key={`name ${idx}`}>"{campaign.name}"</span>,
@@ -34,10 +34,10 @@ const Storyteller = ({data}) => {
           ]
         ))}
         </div>
-      )}
+      )} */}
       {settings?.length > 0 && (
         <div>
-        Setting{data.settings?.length > 1 && 's'}:&nbsp;&nbsp;
+        Setting{settings?.length > 1 && 's'}:&nbsp;&nbsp;
         {settings.map((setting, idx) => (
           [
             <a key={`link ${idx}`} href={setting.weblink} target="_blank">
