@@ -19,19 +19,44 @@ const styles = {
 }
 
 const Storyteller = ({data}) => { 
-  console.log(data.weblinks);
+  const campaigns = DataService.campaigns.filter(({storytellers})=>(storytellers.includes(data.id)));
+  const settings = DataService.settings.filter(({storytellers})=>(storytellers.includes(data.id)));
   return (
     <Box component="div" sx={styles.settingWrapper}>
-      <Typography align="center">{data.name}</Typography>
+      <Typography align="center" fontWeight="800">{data.name}</Typography>
+      {campaigns?.length > 0 && (
+        <div>
+        Campaigns:&nbsp;&nbsp;
+        {campaigns.map((campaign, idx) => (
+          [
+            <span key={`name ${idx}`}>"{campaign.name}"</span>,
+            <span key={`space ${idx}`}>&nbsp;&nbsp;</span>
+          ]
+        ))}
+        </div>
+      )}
+      {settings?.length > 0 && (
+        <div>
+        Settings:&nbsp;&nbsp;
+        {settings.map((setting, idx) => (
+          [
+            <a key={`link ${idx}`} href={setting.weblink}>
+                {setting.name}
+            </a>,
+            <span key={`space ${idx}`}>&nbsp;&nbsp;</span>
+          ]
+        ))}
+        </div>
+      )}
       {data.weblinks?.length > 0 && (
         <div>
           Links:&nbsp;&nbsp;
-          {data.weblinks.map(weblink => (
+          {data.weblinks.map((weblink, idx) => (
             [
-              <a href={weblink.url}>
+              <a key={`link ${idx}`} href={weblink.url}>
                   {weblink.name}
               </a>,
-              <span>&nbsp;&nbsp;</span>
+            <span key={`space ${idx}`}>&nbsp;&nbsp;</span>
             ]
           ))}
         </div>

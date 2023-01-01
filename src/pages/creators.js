@@ -21,7 +21,7 @@ const styles = {
 const Storyteller = ({data}) => { 
   return (
     <Box component="div" sx={styles.settingWrapper}>
-        <Typography align="center">{data.name}</Typography>
+      <Typography align="center" fontWeight="800">{data.name}</Typography>
     </Box>
   );
 }

@@ -121,7 +121,7 @@
       "image": "https://s3.amazonaws.com/files.d20.io/images/314920540/u8eQRBvlrh1brerP8_4VfA/max.jpg"
     }
   ],
-  "campaignSettings": [
+  "settings": [
     {
       "id": 1,
       "name": "Khalbadia Prime",
