@@ -1,3 +1,6 @@
+
+Feel free to use any and all code in this repo for your own site. Don't use the name or logo or I'll tell the artist on you. This project is built off of "Gatsby starter boilerplate for Redux and Material-UI (v5)", the original readme of which can be found below.
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
