@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Box, List, ListItem } from "@mui/material";
+import { Box } from "@mui/material";
 import { Link } from "gatsby-theme-material-ui";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -51,23 +51,23 @@ const Header = ({ siteTitle }) => (
         alt="Crit Fumble Gaming"
       />
     </Link>
-    <List sx={styles.navBar}>
-      <ListItem sx={styles.navItem}>
+    <Box sx={styles.navBar}>
+      <Box sx={styles.navItem}>
         <Link to="/about-us/" sx={styles.link}>About Us</Link>
-      </ListItem>
-      <ListItem sx={styles.navItem}>
+      </Box>
+      <Box sx={styles.navItem}>
         <Link to="/settings/" sx={styles.link}>Settings</Link>
-      </ListItem>
-      <ListItem sx={styles.navItem}>
+      </Box>
+      <Box sx={styles.navItem}>
         <Link to="/campaigns/" sx={styles.link}>Campaigns</Link>
-      </ListItem>
-      <ListItem sx={styles.navItem}>
+      </Box>
+      <Box sx={styles.navItem}>
         <Link to="/calendar/" sx={styles.link}>Calendar</Link>
-      </ListItem>
-      <ListItem sx={styles.navItem}>
+      </Box>
+      <Box sx={styles.navItem}>
         <Link to="/contact/" sx={styles.link}>Contact</Link>
-      </ListItem>
-    </List>
+      </Box>
+    </Box>
   </Box>
 )
 

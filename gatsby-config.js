@@ -14,9 +14,7 @@ module.exports = {
     LMDB_STORE: false
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    // `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

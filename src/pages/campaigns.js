@@ -5,6 +5,8 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import DataService from "../services/DataService";
 
+const Head = () => <Seo title="Campaigns" />
+
 const styles = {
   wrapper: {
     textAlign: 'center',
@@ -68,9 +70,10 @@ const Campaign = ({data}) => {
   );
 }
 
+// TODO: export Head above instead of including in markup
 const CampaignsPage = () => (
   <Layout>
-    <Seo title="Campaigns" />
+  <Head />
     <Box component="div" sx={styles.wrapper}>
       <h1>Campaigns</h1>
       <p>This is a list of current Crit Fumble campaigns.</p>

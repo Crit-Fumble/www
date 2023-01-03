@@ -3,6 +3,8 @@ import { Box } from "@mui/material";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
+const Head = () => <Seo title="Home" />
+
 const styles = {
   wrapper: {
     textAlign: 'center',
@@ -10,9 +12,10 @@ const styles = {
   }
 }
 
+// TODO: export Head above instead of including in markup
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
+    <Head />
     <Box component="div" sx={styles.wrapper}>
       <h1>Crit Fumble Gaming</h1>
       <p>If the GM doesn't kill you, the dice will.</p>
@@ -20,4 +23,5 @@ const IndexPage = () => (
     </Box>
   </Layout>
 )
+
 export default IndexPage
