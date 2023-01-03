@@ -5,6 +5,8 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import DataService from "../services/DataService";
 
+const Head = () => <Seo title="Settings" />
+
 const styles = {
   wrapper: {
     textAlign: 'center',
@@ -22,6 +24,7 @@ const styles = {
   }
 }
 
+// TODO: export Head above instead of including in markup
 const Setting = ({data}) => {
   return (
     <Box component="div" sx={styles.settingWrapper}>
@@ -51,7 +54,7 @@ const Setting = ({data}) => {
 
 const SettingsPage = () => (
   <Layout>
-    <Seo title="Settings" />
+    <Head />
     <Box component="div" sx={styles.wrapper}>
       <h1>Settings</h1>
       <p>This is a list of the campaign settings used by Crit Fumble Gaming storytellers.</p>

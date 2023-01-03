@@ -6,6 +6,33 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import Header from "./header"
 
+const styles = {
+  container: {
+    my: 0,
+    mx: 'auto',
+    pt: 0,
+    px: '1.0875rem',
+    pb: '1.45rem',
+    width: '960px',
+    maxWidth: '100%',
+    minWidth: '200px',
+    borderRadius: '32px',
+    backgroundColor: 'background.paper',
+    margin: 'auto',
+  },
+  footer: {
+    textAlign: 'center',
+    width: '960px',
+    maxWidth: '100%',
+    minWidth: '200px',
+    borderRadius: '32px',
+    backgroundColor: 'background.paper',
+    margin: 'auto',
+    padding: '16px',
+    mt: '2rem'
+  }
+}
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -15,34 +42,7 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
-
-  const styles = {
-    container: {
-      my: 0,
-      mx: 'auto',
-      pt: 0,
-      px: '1.0875rem',
-      pb: '1.45rem',
-      width: '960px',
-      maxWidth: '100%',
-      minWidth: '200px',
-      borderRadius: '32px',
-      backgroundColor: 'background.paper',
-      margin: 'auto',
-    },
-    footer: {
-      textAlign: 'center',
-      width: '960px',
-      maxWidth: '100%',
-      minWidth: '200px',
-      borderRadius: '32px',
-      backgroundColor: 'background.paper',
-      margin: 'auto',
-      padding: '16px',
-      mt: '2rem'
-    }
-  }
+  `);
 
   return (
     <>

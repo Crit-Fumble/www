@@ -45,7 +45,7 @@ const AppTheme = createTheme(DefaultTheme, {
       paper: grey[200],
     },
     common: {
-      black: grey[1000],
+      black: grey[999],
       white: grey[1]
     },
     error: {
