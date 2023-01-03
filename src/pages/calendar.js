@@ -29,9 +29,9 @@ const calendarIds = [
   'Y3JpdC5mdW1ibGUud2ViQGdtYWlsLmNvbQ', // Everyone
 ]
 
-const ContactPage = () => (
+const CalendarPage = () => (
   <Layout>
-    <Seo title="Contact" />
+    <Seo title="Calendar" />
     <Box component="div" sx={styles.wrapper}>
       <h1>Calendar</h1>
       <p>All scheduled sessions and events are subject to change.</p>
@@ -43,4 +43,4 @@ const ContactPage = () => (
   </Layout>
 )
 
-export default ContactPage
+export default CalendarPage
