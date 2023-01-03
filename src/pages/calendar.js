@@ -22,10 +22,9 @@ const ContactPage = () => (
   <Layout>
     <Seo title="Contact" />
     <Box component="div" sx={styles.wrapper}>
-      <h1>Contact</h1>
-      <p>To contact us, join our Discord server!</p>
-      <iframe src={`https://discord.com/widget?id=${DataService.discord.id}&theme=dark`} width="500" height="400" allowtransparency="true" frameBorder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />
-    </Box>
+      <h1>Calendar</h1>
+      <p>Here are all our schedules sessions and events.</p>
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23616161&ctz=America%2FChicago&mode=MONTH&showTabs=1&showPrint=1&showDate=1&showNav=1&showTitle=1&title=Scheduled%20Sessions&src=Y3JpdC5mdW1ibGUud2ViQGdtYWlsLmNvbQ&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23A79B8E&color=%230B8043" style={{ border: "solid 1px #777" }} width="800" height="600" frameBorder="0" /></Box>
   </Layout>
 )
 
