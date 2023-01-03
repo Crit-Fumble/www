@@ -62,6 +62,9 @@ const Header = ({ siteTitle }) => (
         <Link to="/campaigns/" sx={styles.link}>Campaigns</Link>
       </ListItem>
       <ListItem sx={styles.navItem}>
+        <Link to="/calendar/" sx={styles.link}>Calendar</Link>
+      </ListItem>
+      <ListItem sx={styles.navItem}>
         <Link to="/contact/" sx={styles.link}>Contact</Link>
       </ListItem>
     </List>
