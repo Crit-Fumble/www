@@ -27,8 +27,6 @@ const calendarIds = [
   '32573e1502e8c27c33196b4ff6d660ad79bd7aba971fadeed0a5cff3e3c0bb4d%40group.calendar.google.com', // DAPS
   'f7742274324ce74b220323d176114293d188e8c6c0208fa4361e68bcf326617c%40group.calendar.google.com', // Death Be Damned
   '439b3127ff43e2212d431bc27865092e21947c5d390ba6c0c0964c814df3a736%40group.calendar.google.com', // Player
-  '68b52257c754f2bcde70015c2e51fa475dfe31b9bfa12433fb6aec60ad543c73%40group.calendar.google.com', // NPC
-  'Y3JpdC5mdW1ibGUud2ViQGdtYWlsLmNvbQ', // Everyone
 ]
 
 // TODO: export Head above instead of including in markup
