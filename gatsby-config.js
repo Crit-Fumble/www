@@ -10,7 +10,7 @@ module.exports = {
     FAST_DEV: true,
     DEV_WEBPACK_CACHE: false,
     PRESERVE_FILE_DOWNLOAD_CACHE: false,
-    PARALLEL_SOURCING: false,
+    PARALLEL_SOURCING: true,
     LMDB_STORE: false
   },
   plugins: [
@@ -87,9 +87,9 @@ module.exports = {
     //     windowKey: '__PRELOADED_STATE__'
     //   }
     // },
-    // `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import DataService from "../services/DataService";
 
-const Head = () => <Seo title="About Us" />
+export const Head = () => <Seo title="About Us" />
 
 const roleIds = {
   STORYTELLER: 1,
@@ -79,9 +79,9 @@ const AboutUsPage = () => {
     .filter(({roles}) => roles.includes(roleIds.CREATOR) && !roles.includes(roleIds.STORYTELLER));
   // const players = DataService.users
   //  .filter(({roles}) => roles.includes(3) && ![1,2].some(r => roles.includes(r)));
+
   return (
     <Layout>
-      <Head />
       <Box component="div" sx={styles.wrapper}>
         <h1>About Us</h1>
         <p></p>

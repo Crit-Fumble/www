@@ -1,5 +1,9 @@
 import WorldAnvilService from "./WorldAnvilService"
 import siteData from  "../data/siteData.json"
+import _campaigns from  "../data/campaigns.json"
+import _settings from  "../data/settings.json"
+import _gameSystems from  "../data/gameSystems.json"
+import _users from  "../data/users.json"
 // console.log(siteData);
 
 export default class DataService {
@@ -8,20 +12,16 @@ export default class DataService {
     return userRoles;
   }
   static get users() {
-    const { users } = siteData;
-    return users;
+    return _users;
   }
   static get campaigns() {
-    const { campaigns } = siteData;
-    return campaigns;
+    return _campaigns;
   }
   static get settings() {
-    const { settings } = siteData;
-    return settings;
+    return _settings;
   }
   static get gameSystems() {
-    const { gameSystems } = siteData;
-    return gameSystems;
+    return _gameSystems;
   }
   static get discord() {
     const { discord } = siteData;

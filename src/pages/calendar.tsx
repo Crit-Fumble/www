@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
-const Head = () => <Seo title="Calendar" />
+export const Head = () => <Seo title="Calendar" />
 
 const styles = {
   wrapper: {
@@ -29,10 +29,8 @@ const calendarIds = [
   '439b3127ff43e2212d431bc27865092e21947c5d390ba6c0c0964c814df3a736%40group.calendar.google.com', // Player
 ]
 
-// TODO: export Head above instead of including in markup
 const CalendarPage = () => (
   <Layout>
-    <Head />
     <Box component="div" sx={styles.wrapper}>
       <h1>Calendar</h1>
       <p>All scheduled sessions and events are subject to change.</p>

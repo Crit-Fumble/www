@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "code": "D&D5e",
+    "name": "Dungeons and Dragons",
+    "edition": 5,
+    "weblinks": []
+  },
+  {
+    "id": 2,
+    "code": "Coriolis",
+    "name": "Coriolis",
+    "weblinks": []
+  }
+]
