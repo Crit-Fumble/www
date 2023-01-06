@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import DataService from "../services/DataService";
 
-const Head = () => <Seo title="Contact" />
+export const Head = () => <Seo title="Contact" />
 
 const styles = {
   wrapper: {
@@ -18,14 +18,17 @@ const styles = {
   }
 }
 
-// TODO: export Head above instead of including in markup
 const ContactPage = () => (
   <Layout>
-    <Head />
     <Box component="div" sx={styles.wrapper}>
       <h1>Contact</h1>
       <p>To contact us, join our Discord server!</p>
-      <iframe style={styles.iFrame} src={`https://discord.com/widget?id=${DataService.discord.id}&theme=dark`} allowtransparency="true" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />
+      <iframe 
+        style={styles.iFrame} 
+        src={`https://discord.com/widget?id=${DataService.discord.id}&theme=dark`} 
+        allowTransparency={true} 
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" 
+      />
     </Box>
   </Layout>
 )

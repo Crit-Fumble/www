@@ -1,0 +1,115 @@
+[
+  {
+    "id": 1,
+    "roles": [1, 3],
+    "name": "Mumbley",
+    "weblinks": [
+      {
+        "name": "World Anvil",
+        "url": "https://www.worldanvil.com/author/MumblesKC"
+      },
+      {
+        "name": "Fantasy Grounds",
+        "url": "https://www.fantasygrounds.com/forums/member.php?48600-Mumbles"
+      },
+      {
+        "name": "Roll20",
+        "url": "https://app.roll20.net/users/11135654"
+      },
+      {
+        "name": "D&D Beyond",
+        "url": "https://www.dndbeyond.com/members/Aleric_Brightstone"
+      }
+    ],
+    "externalIds":{
+      "worldAnvil": "MumblesKC",
+      "discord": "148322230093217792",
+      "fantasyGrounds": "48600-Mumbles",
+      "roll20": "11135654",
+      "steam": "76561198090920631",
+      "dndBeyond": "Aleric_Brightstone"
+    }
+  },
+  {
+    "id": 2,
+    "roles": [1, 3],
+    "name": "Hob Daytrain",
+    "weblinks": [
+      {
+        "name": "World Anvil",
+        "url": "https://www.worldanvil.com/author/hobdaytrain"
+      },
+      {
+        "name": "Fantasy Grounds",
+        "url": "https://www.fantasygrounds.com/forums/member.php?517107-Dee-Andy"
+      },
+      {
+        "name": "Roll20",
+        "url": "https://app.roll20.net/users/11135654"
+      },
+      {
+        "name": "D&D Beyond",
+        "url": "https://www.dndbeyond.com/members/HobTheBreadtaker"
+      }
+    ],
+    "externalIds":{
+      "worldAnvil": "hobdaytrain",
+      "discord": "451207409915002882",
+      "fantasyGrounds": "517107-Dee-Andy",
+      "roll20": "11135654",
+      "steam": "76561198052269461",
+      "dndBeyond": "HobTheBreadtaker"
+    }
+  },
+  {
+    "id": 3,
+    "roles": [1, 3],
+    "name": "Eric",
+    "weblinks": [
+      {
+        "name": "World Anvil",
+        "url": "https://www.worldanvil.com/author/sovereignrk"
+      },
+      {
+        "name": "Roll20",
+        "url": "https://app.roll20.net/users/9480594"
+      },
+      {
+        "name": "D&D Beyond",
+        "url": "https://www.dndbeyond.com/members/Dastore"
+      }
+    ],
+    "externalIds":{
+      "worldAnvil": "sovereignrk",
+      "discord": "453698917016797185",
+      "roll20": "9480594",
+      "dndBeyond": "Dastore"
+    }
+  },
+  {
+    "id": 4,
+    "roles": [2, 3],
+    "name": "Skip",
+    "weblinks": [
+      {
+        "name": "World Anvil",
+        "url": "https://www.worldanvil.com/author/suicidoll"
+      },
+      {
+        "name": "Roll20",
+        "url": "https://app.roll20.net/users/5844072"
+      },
+      {
+        "name": "D&D Beyond",
+        "url": "https://www.dndbeyond.com/members/DarkSeldarine"
+      }
+    ],
+    "externalIds":{
+      "worldAnvil": "suicidoll",
+      "discord": "307361001538453504",
+      "roll20": "5844072",
+      "steam": "76561198002521599",
+      "dndBeyond": "DarkSeldarine"
+    }
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "name": "Khalbadia Prime",
+    "storytellers": [1],
+    "weblink": "https://www.worldanvil.com/w/khalbadia-prime",
+    "externalIds": {
+      "worldAnvil": "6a984714-77d3-482c-afcc-c697ddd73b23"
+    },
+    "image": "https://www.worldanvil.com/media/cache/cover/uploads/maps/f86c7a573eb9cfc848a72acda4f80f29.jpg"
+  },
+  {
+    "id": 2,
+    "name": "The Plane of Bitu",
+    "storytellers": [2],
+    "weblink": "https://www.worldanvil.com/w/bitu",
+    "externalIds": {
+      "worldAnvil": "89bd2615-39ff-4b45-be1f-0aff94ffc8a9"
+    },
+    "image": "https://www.worldanvil.com/media/cache/cover/uploads/images/2254cf89eef87c113bfb64b527ffd20a.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Empires of Ithlon",
+    "storytellers": [3],
+    "weblink": "https://www.worldanvil.com/w/ithlon-sovereignrk",
+    "externalIds": {
+      "worldAnvil": "c944866b-13be-4026-b525-fe182bca242b"
+    },
+    "image": "https://s3.amazonaws.com/files.d20.io/images/276460078/rXkOWZDPA8udwmNSj8Sh6A/max.jpg"
+  },
+  {
+    "id": 4,
+    "name": "USCSS Nostromo",
+    "storytellers": [3],
+    "image": "https://imgur.com/bpvD0Zi.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Toril22",
+    "storytellers": [1,2],
+    "externalIds": {
+      "worldAnvil": "803f16a4-ae62-435c-b24e-b27a71a02d3c"
+    },
+    "weblink": "https://www.worldanvil.com/w/toril22",
+    "image": "https://www.worldanvil.com/media/cache/cover/uploads/images/533f6dd42214fbc145af473ed871549e.webp"
+  }
+]
